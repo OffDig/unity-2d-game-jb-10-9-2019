@@ -9,20 +9,13 @@ public class SoundManager : MonoBehaviour
     public AudioSource audioSource;
 
     public AudioClip coinCollectSound;
-
     public void Awake()
     {
         Instance = this;
     }
-
     public void PlayCoinCollectSound()
     {
         audioSource.clip = coinCollectSound;
         audioSource.Play();
     }
-
-
-
-
-
 }

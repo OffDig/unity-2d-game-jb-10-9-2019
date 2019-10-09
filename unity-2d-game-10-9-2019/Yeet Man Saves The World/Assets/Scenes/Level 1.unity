@@ -9470,6 +9470,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Happy Face_3 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846091998428931727, guid: 7470f8dac7d6b374a95a699df8a816d2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6846091998428931762, guid: 7470f8dac7d6b374a95a699df8a816d2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -35292,7 +35297,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   container: {fileID: 1758211260}
   nextLevelButton: {fileID: 2056635210}
-  dismissButton: {fileID: 0}
+  dismissButton: {fileID: 577668159}
 --- !u!1 &1695521597
 GameObject:
   m_ObjectHideFlags: 0
