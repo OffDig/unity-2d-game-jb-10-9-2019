@@ -5260,6 +5260,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &277186840 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 18fcd494ab71841d695135246693eb3a,
+    type: 3}
+  m_PrefabInstance: {fileID: 37458146}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &279295735
 GameObject:
   m_ObjectHideFlags: 0
@@ -9469,6 +9475,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Happy Face_3 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846091998428931727, guid: 7470f8dac7d6b374a95a699df8a816d2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6846091998428931762, guid: 7470f8dac7d6b374a95a699df8a816d2,
         type: 3}
@@ -20589,6 +20600,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1070680095}
   coinCollectSound: {fileID: 8300000, guid: 71b4358062eacf94a9c7ec42522a195d, type: 3}
+  hazardCollideSound: {fileID: 8300000, guid: 2c5abe698eb99654bb8a8679fe2b66b1, type: 3}
 --- !u!1 &964985735
 GameObject:
   m_ObjectHideFlags: 0
@@ -35292,7 +35304,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   container: {fileID: 1758211260}
   nextLevelButton: {fileID: 2056635210}
-  dismissButton: {fileID: 0}
+  dismissButton: {fileID: 577668159}
 --- !u!1 &1695521597
 GameObject:
   m_ObjectHideFlags: 0
@@ -44433,6 +44445,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2087215469
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2087215471}
+  - component: {fileID: 2087215470}
+  m_Layer: 0
+  m_Name: Create Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2087215470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087215469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 702fe129f7947ba4d93b67c5f9be950e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  createPrefab: {fileID: 277186840}
+  amountOfCratesToSpawn: 15
+--- !u!4 &2087215471
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087215469}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.69, y: 10.189641, z: -0.22410037}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2087985511
 GameObject:
   m_ObjectHideFlags: 0
