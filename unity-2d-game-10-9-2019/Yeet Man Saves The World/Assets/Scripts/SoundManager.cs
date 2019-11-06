@@ -11,6 +11,8 @@ public class SoundManager : MonoBehaviour
     public AudioClip coinCollectSound;
 
     public AudioClip hazardCollideSound;
+
+    public AudioClip youWinSound;
     public void Awake()
     {
         if (Instance == null)
@@ -32,6 +34,11 @@ public class SoundManager : MonoBehaviour
     public void PlayHazardCollideSound()
     {
         audioSource.clip = hazardCollideSound;
+        audioSource.Play();
+    }
+    public void PlayYouWinSound()
+    {
+        audioSource.clip = youWinSound;
         audioSource.Play();
     }
 }

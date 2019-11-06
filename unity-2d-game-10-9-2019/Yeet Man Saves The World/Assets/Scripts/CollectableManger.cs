@@ -36,6 +36,15 @@ public class CollectableManger : MonoBehaviour
             YouWinMenu.Instance.Show();
         }
 
+        if (_collectedCoins >= _totalCoins)
+        {
+            SoundManager.Instance.PlayYouWinSound();
+        }
+        if (_collectedCoins < _totalCoins)
+        { 
+            SoundManager.Instance.PlayCoinCollectSound();
+        }
+
         SoundManager.Instance.PlayCoinCollectSound();
     }
 }
