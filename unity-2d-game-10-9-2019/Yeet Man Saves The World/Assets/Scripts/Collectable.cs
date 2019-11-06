@@ -15,13 +15,12 @@ public class Collectable : MonoBehaviour
     private bool _hasBeenCollected = false;
 
     // Update is called once per frame
-        void HandleCollected()
+        public virtual void HandleCollected()
         {
         _hasBeenCollected = true;
-        CollectableManger.Instance.HandleCoinCollected();
 
         Destroy(gameObject);
 
-        }
+    }
     
 }

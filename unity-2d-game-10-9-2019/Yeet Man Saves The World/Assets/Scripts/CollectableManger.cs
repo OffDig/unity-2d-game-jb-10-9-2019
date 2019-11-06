@@ -46,5 +46,6 @@ public class CollectableManger : MonoBehaviour
         }
 
         SoundManager.Instance.PlayCoinCollectSound();
+        
     }
 }
